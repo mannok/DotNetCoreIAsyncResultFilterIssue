@@ -26,7 +26,7 @@ namespace WebApplication2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers(configure => {
-                configure.Filters.Add(new TestResultFilter());
+                configure.Filters.Add(new TestResultFilterAsync());
             });
         }
 
